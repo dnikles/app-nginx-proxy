@@ -99,7 +99,7 @@ If specified, configures Nginx to use HTTP/3 with QUIC/UDP on this UDP port in a
 
 ## Troubleshooting
 
-- `400 Bad Request` response for requests over this proxy mean you are probably missing the **Reverse Proxy** configuration options, see above.
+- `400 Bad Request` response for requests over this proxy mean you are probably missing the **Reverse proxy** configuration options, see above.
 - HTTP/3 (QUIC) enabled, but not working. Check for the `Alt-Svc 'h3=":443"; ma=86400'` header in your web browser's development tools. Make sure the UDP QUIC port is forwarded or allowed in your firewall, in addition to the TCP HTTPS port.
 
 ## Support
